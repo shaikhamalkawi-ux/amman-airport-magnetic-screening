@@ -4,20 +4,21 @@ The archived source workbook and source-level author materials are not approved 
 
 ## Intentionally excluded from this public repository
 
-- `M-Ghraam2026.xlsx`
-- source-level spreadsheets and correspondence
-- author-only audit and transfer packages
-- any file that would disclose controlled source data before author approval
+- original study-team spreadsheets and source documents;
+- source-level correspondence;
+- author-only audit and transfer packages;
+- row-level source reconstructions and any file that would disclose controlled source data before author approval.
 
-## Planned public material
+## Public material
 
-Subject to author approval and journal/repository requirements, this repository may contain:
+This repository may contain:
 
-- analysis code;
-- publication-safe derived tables;
-- figure-generation code;
-- manuscript build source;
-- reproducibility manifests;
-- a permanent release/DOI record.
+- public-safe analysis code;
+- publication-safe aggregate tables;
+- method and claim-boundary documentation;
+- reproducibility instructions and environment files;
+- public reference metadata.
+
+Subject to later author approval and journal/repository requirements, manuscript build source, additional derived outputs, and a permanent release/DOI record may be added.
 
 The absence of the controlled workbook from this repository must not be interpreted as evidence that the source data are unavailable to the author team.
