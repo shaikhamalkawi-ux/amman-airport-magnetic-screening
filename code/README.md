@@ -1,5 +1,13 @@
 # Analysis code
 
-The public repository is being initialized in stages because the repository is currently public while the archived source workbook remains controlled author material.
+This directory contains the **public-safe** implementation of the central V4 screening comparison.
 
-The verified V4 analysis code will be copied here once the author team confirms the intended public-release contents. The controlled internal package already contains the complete executable pipeline and clean-replay evidence.
+## Files
+
+- `analyse_public.py` — grouped prediction, selected-single benchmark, frequency-versus-fraction comparison, triage curves, held-out pair-batch audit, and conditional resource frontier.
+- `verify_public.py` — aggregate structural and arithmetic checks.
+- `run_public.sh` — sequential runner.
+
+The scripts do not contain the controlled source workbook or source values. They require an authorized local `data/analysis_input.csv` described in `data/README.md`.
+
+The public implementation deliberately emits aggregate outputs only. Source-cell traces, row-level prediction files, selected sample-ID lists, and private provenance records remain outside this repository.
