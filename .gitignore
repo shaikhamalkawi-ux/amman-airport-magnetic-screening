@@ -4,17 +4,10 @@
 # Do not commit original author/team source files, spreadsheets,
 # correspondence, transfer packages, or controlled archives.
 
-# Original / team spreadsheets
-M-Ghraam2026.xlsx
-نتائج تحليل العناصر .xlsx
-نتائج محمد الغرام -د طايل1.xlsx
-نتائج مغناطسيبة 2.xlsx
+# Original / team spreadsheets and documents
 *.xlsx
 *.xls
 *.xlsm
-
-# Original / team documents and field/source material
-+Thesis-FinaLl.doc
 *.doc
 *.docx
 source_materials/
@@ -31,6 +24,9 @@ legacy/
 *.rar
 *.tar
 *.gz
+
+# Local authorized analysis input
+data/analysis_input.csv
 
 # Source-derived row-level data and traces
 Baseline_Master_44.csv
