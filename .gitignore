@@ -1,15 +1,46 @@
-# Controlled author/source data
+# ==========================================================
+# PUBLIC REPOSITORY SAFETY BOUNDARY
+# ==========================================================
+# Do not commit original author/team source files, spreadsheets,
+# correspondence, transfer packages, or controlled archives.
+
+# Original / team spreadsheets
 M-Ghraam2026.xlsx
+نتائج تحليل العناصر .xlsx
+نتائج محمد الغرام -د طايل1.xlsx
+نتائج مغناطسيبة 2.xlsx
 *.xlsx
+*.xls
+*.xlsm
+
+# Original / team documents and field/source material
++Thesis-FinaLl.doc
+*.doc
+*.docx
+source_materials/
+original_sources/
+author_files/
 raw_data/
 private/
 controlled/
 legacy/
 
-# Local delivery and audit packages
+# Local transfer, archive, and delivery packages
 *.zip
 *.7z
 *.rar
+*.tar
+*.gz
+
+# Source-derived row-level data and traces
+Baseline_Master_44.csv
+Derived_Master44.csv
+Source_cell_trace.csv
+Predictions.csv
+Batch_predictions.csv
+Folds.csv
+Selections.csv
+Shared_scores.csv
 
 # Local generated files
 __pycache__/
@@ -26,7 +57,8 @@ Thumbs.db
 *.fdb_latexmk
 *.synctex.gz
 
-# Local environments
+# Local environments / secrets
 .venv/
 venv/
 .env
+.env.*
