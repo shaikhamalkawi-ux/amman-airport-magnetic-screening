@@ -4,7 +4,7 @@
 
 This repository supports the secondary-analysis study:
 
-> **Frequency or particle size? Choosing additional magnetic measurements for roadside-soil screening**
+> **When predictive fit and screening utility diverge: choosing frequency or particle size in roadside-soil magnetometry**
 
 The study re-analyses an archived 44-sample roadside-soil campaign from the Amman–Airport Highway, Jordan. The central question is practical: **when laboratory resources are limited, is the more useful additional magnetic information obtained from a second measurement frequency within one particle-size fraction, or from preparing and measuring a second particle-size fraction?**
 
@@ -22,13 +22,19 @@ The repository keeps the scientific claim boundaries explicit:
 
 ## Current scientific revision
 
-Current internal scientific revision: **V4 (2026-09-20)**.
+Current scientific revision: **V6 (2026-09-20)**.
 
-Key result: the preferred magnetic measurement depends on the metal and the downstream decision criterion. A configuration with the best predictive R² does not necessarily provide the best low-budget sample-recovery performance.
+The central result is that measurement value depends on the declared endpoint. A configuration with the best predictive fit does not necessarily provide the best low-budget sample-recovery performance.
+
+V6 adds three safeguards to the previous analysis:
+
+- the exact Mn C-frequency-versus-two-fraction low-budget ordering is tested against alternative blocking and high-set definitions and is shown not to be invariant;
+- recorded distance/side information is made explicit as a simple context baseline;
+- an open dual-frequency coastal-sediment dataset is used only as a frequency-only portability stress test, not as external validation of the Jordan fine/coarse comparison.
 
 ## Public-safe analysis code
 
-The repository now contains a public-safe implementation of the central V4 comparison in `code/analyse_public.py`.
+The repository contains a public-safe implementation of the central comparison in `code/analyse_public.py`.
 
 The code expects a local `data/analysis_input.csv` matching the schema documented in `data/README.md`. The controlled author/team source archive is **not included** in this public repository.
 
@@ -45,13 +51,7 @@ The runner writes aggregate analysis outputs only. It does not emit source-cell 
 
 ## Publication-safe results
 
-The `results/` directory contains selected aggregate outputs supporting the current manuscript:
-
-- primary blocked performance;
-- incremental FC-versus-selected-single error comparison;
-- fixed-budget triage summary;
-- 80% retrospective recovery frontier;
-- held-out pair-batch summary.
+The `results/` directory contains aggregate outputs supporting the manuscript, including the primary blocked performance, resource frontier, low-budget triage, V6 endpoint sensitivity, context safeguard, and the external frequency-only stress test.
 
 These aggregate files are included for transparency and inspection; they are not a substitute for the controlled source archive.
 
@@ -63,14 +63,7 @@ See `PUBLIC_RELEASE_POLICY.md`.
 
 ## Reproducibility
 
-The controlled V4 package passed:
-
-- 268 numerical/property checks;
-- an independent QR-based numerical cross-check;
-- clean replay with 21/21 generated CSV tables reproduced byte-for-byte;
-- LaTeX cross-reference, font, and render QA.
-
-The public-safe implementation was also run locally against an authorized adapted input and reproduced the headline V4 values, including Mn FC R² ≈ 0.4055, Cu FC R² ≈ 0.4875, and Cr C-frequency block-MAE ≈ 0.09466.
+The controlled analysis pipeline passed its numerical/property and clean-replay checks. A separately written blocked-OLS implementation reproduced 54 matched primary model/metal metric combinations with maximum absolute difference (3.22\times 10^{-15}) across R², block-MAE, and Spearman metrics.
 
 These checks establish computational reproducibility of the implemented analysis. They do **not** establish instrument accuracy, external validation, or geographic independence.
 
