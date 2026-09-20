@@ -6,8 +6,8 @@ This repository is intentionally **public**, but it is **not** a public mirror o
 
 The following are excluded unless the original study team explicitly approves public release:
 
-- original Excel workbooks supplied by the study team;
-- the final archived workbook `M-Ghraam2026.xlsx`;
+- original spreadsheets supplied by the study team;
+- the controlled archived source workbook;
 - original field sheets, source documents, thesis/source files, correspondence, or author transfer packages;
 - row-level source reconstructions or prediction files that could expose the controlled source dataset;
 - private review/audit packages.
