@@ -1,0 +1,32 @@
+# Controlled author/source data
+M-Ghraam2026.xlsx
+*.xlsx
+raw_data/
+private/
+controlled/
+legacy/
+
+# Local delivery and audit packages
+*.zip
+*.7z
+*.rar
+
+# Local generated files
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# LaTeX build residue
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Local environments
+.venv/
+venv/
+.env
