@@ -22,11 +22,11 @@ The repository keeps the scientific claim boundaries explicit:
 
 ## Current scientific revision
 
-Current scientific revision: **V7 Submission-Clean (2026-09-20)**.
+Current scientific revision: **V10 Environmental Advances submission preparation (2026-09-25)**.
 
 The central result is that measurement value depends on the declared endpoint. A configuration with the best predictive fit does not necessarily provide the best low-budget sample-recovery performance.
 
-V6 introduced the main strengthening safeguards; V7 retains those results and applies submission-clean notation, wording, and reproducibility disclosure corrections:
+V6 introduced the main strengthening safeguards; later revisions retained those results while closing notation, authorship, and submission-production details. V10 changes only target-journal preparation for Environmental Advances:
 
 - the exact Mn C-frequency-versus-two-fraction low-budget ordering is tested against alternative blocking and high-set definitions and is shown not to be invariant;
 - recorded distance/side information is made explicit as a simple context baseline;
