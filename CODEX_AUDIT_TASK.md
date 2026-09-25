@@ -1,8 +1,12 @@
-# Codex computational audit task
+# Historical computational audit task — V4
+
+> **Historical record.** This file documents the independent computational audit protocol used during the V4 development stage. It is retained for provenance and is **not** the current manuscript version, current journal-submission checklist, or a statement that the public repository contains the controlled source workbook. The current scientific/submission status is documented in the repository README.
+
+## Original audit task
 
 Act as a second computational auditor of the V4 analysis. Do not assume existing PASS records are correct.
 
-## Audit goals
+### Audit goals
 
 1. Reproduce the supplied pipeline in a clean environment.
 2. Recompute the principal regressions and ranking/triage calculations using a separately written implementation rather than importing the original analysis functions.
@@ -11,7 +15,7 @@ Act as a second computational auditor of the V4 analysis. Do not assume existing
 5. Verify conditional resource/cost arithmetic without introducing unobserved prices.
 6. Record every discrepancy and whether it changes any manuscript result or claim.
 
-## Non-negotiable boundaries
+### Non-negotiable boundaries
 
 - Do not change the archived data to improve results.
 - Do not tune models to produce a preferred outcome.
@@ -19,7 +23,7 @@ Act as a second computational auditor of the V4 analysis. Do not assume existing
 - Do not infer geographic independence from numeric sample codes.
 - Do not fabricate unavailable cost, calibration, or measurement-uncertainty records.
 
-## Expected return
+### Expected return
 
 Return an audit folder or ZIP containing:
 
