@@ -22,15 +22,17 @@ The repository keeps the scientific claim boundaries explicit:
 
 ## Current scientific revision
 
-Current scientific revision: **V10 Environmental Advances submission preparation (2026-09-25)**.
+Current scientific revision: **V11 Environmental Advances final submission closure (2026-09-25)**.
 
 The central result is that measurement value depends on the declared endpoint. A configuration with the best predictive fit does not necessarily provide the best low-budget sample-recovery performance.
 
-V6 introduced the main strengthening safeguards; later revisions retained those results while closing notation, authorship, and submission-production details. V10 changes only target-journal preparation for Environmental Advances:
+V11 retains the V10 scientific analysis and closes pre-submission wording, declaration, line-numbering, and production items. In particular:
 
-- the exact Mn C-frequency-versus-two-fraction low-budget ordering is tested against alternative blocking and high-set definitions and is shown not to be invariant;
-- recorded distance/side information is made explicit as a simple context baseline;
-- an open dual-frequency coastal-sediment dataset is used only as a frequency-only portability stress test, not as external validation of the Jordan fine/coarse comparison.
+- the Mn C-frequency-versus-two-fraction low-budget ordering remains explicitly definition-dependent rather than universal;
+- the Cu finding is stated as matching low-budget recovery count, not matching sample identity;
+- the external dual-frequency dataset remains a portability stress test, not external validation;
+- the sign convention for FC error gain is stated consistently with the defined equation;
+- public-facing declarations and submission files are separated from the controlled source archive.
 
 ## Public-safe analysis code
 
@@ -51,7 +53,7 @@ The runner writes aggregate analysis outputs only. It does not emit source-cell 
 
 ## Publication-safe results
 
-The `results/` directory contains aggregate outputs supporting the manuscript, including the primary blocked performance, resource frontier, low-budget triage, V6 endpoint sensitivity, context safeguard, and the external frequency-only stress test.
+The `results/` directory contains aggregate outputs supporting the manuscript, including the primary blocked performance, resource frontier, low-budget triage, endpoint sensitivity, context safeguard, and the external frequency-only stress test.
 
 These aggregate files are included for transparency and inspection; they are not a substitute for the controlled source archive.
 
@@ -63,10 +65,10 @@ See `PUBLIC_RELEASE_POLICY.md`.
 
 ## Reproducibility
 
-The controlled analysis pipeline passed its numerical/property and clean-replay checks. A separately written blocked-OLS implementation reproduced 54 matched primary model/metal metric combinations with maximum absolute difference (3.22\times 10^{-15}) across R², block-MAE, and Spearman metrics.
+The controlled analysis pipeline passed its numerical/property and clean-replay checks. A separately written blocked-OLS implementation reproduced 54 matched primary model/metal metric combinations with maximum absolute difference (3.22\times10^{-15}) across R², block-MAE, and Spearman metrics.
 
 These checks establish computational reproducibility of the implemented analysis. They do **not** establish instrument accuracy, external validation, or geographic independence.
 
 ## Repository status
 
-Public-safe code, documentation, and aggregate results are available. Source-data release, manuscript posting, licence, and permanent DOI remain author-stage decisions.
+Public-safe code, documentation, and aggregate results are available. Original source-data release remains controlled by the original study team.
