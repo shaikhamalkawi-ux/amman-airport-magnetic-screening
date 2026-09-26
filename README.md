@@ -1,74 +1,49 @@
-# Amman–Airport Magnetic Screening
+# Amman–Airport magnetic screening: V11R3 reproducibility
 
-**Public research repository**
+Research data and software accompanying **When predictive fit and screening utility diverge: choosing frequency or particle size in roadside-soil magnetometry**.
 
-This repository supports the secondary-analysis study:
+This release makes the original study workbook, the supplied reconstructed analysis table, the endpoint-directed extension code and reference outputs available with explicit execution checks. The scientific results are unchanged. The study contains 44 archived soil samples, 43 complete fine/coarse magnetic pairs and nine measured metals.
 
-> **When predictive fit and screening utility diverge: choosing frequency or particle size in roadside-soil magnetometry**
+Release: `v11r3-reproducibility` (2026-09-26). Archive DOI: [10.5281/zenodo.22973207](https://doi.org/10.5281/zenodo.22973207).
 
-The study re-analyses an archived 44-sample roadside-soil campaign from the Amman–Airport Highway, Jordan. The central question is practical: **when laboratory resources are limited, is the more useful additional magnetic information obtained from a second measurement frequency within one particle-size fraction, or from preparing and measuring a second particle-size fraction?**
+## Contents and checked scope
 
-## Scientific scope
+| Directory | Contents |
+|---|---|
+| `endpoint_extension/` | Original workbook, hash-locked master CSV, unchanged author scripts, original protocol, reference CSVs and archived presentation artifacts. |
+| `data/` | Input for the earlier central public implementation, mapped directly from the master CSV. |
+| `code/` | Earlier central implementation, new input-schema adapter and independent context verifier. |
+| `verification/` | New independent replay and source-reconstruction utilities, distinguished from historical author code. |
+| `results/` | Earlier aggregate reference tables and central-script outputs. |
+| `docs/` | Data dictionary, execution reports and exact coverage limits. |
 
-The analysis compares magnetic-screening strategies using archived Bartington MS2B measurements and sample-level chemistry for Fe, Zn, Cu, Cr, Co, Ni, Mn, Pb, and Cd. It evaluates prediction error, ranking/triage performance, grouped sensitivity, held-out batch performance, and conditional resource trade-offs.
+The original workbook SHA-256 is `4ff48393b15d83306e9099efa30e12ee2d797cd57a0b75c44b8f99726380becb`. Its bytes are unchanged, including additional archived laboratory sheets outside the analysis cohort. See [DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md).
 
-The repository keeps the scientific claim boundaries explicit:
+The unchanged author extension passed 878 source-to-table checks. All 12 regenerated CSVs matched 21,139 numerical cells within floating-point tolerance; all 462 checked numerical entries in Main Table 4 and Supplement S14–S18 matched at displayed precision. See [REPRODUCTION_REPORT.md](docs/REPRODUCTION_REPORT.md). Selector-score ties use an absolute tolerance of `1e-12`; exact sample-ranking ties use numerical sample ID. Source distances are in metres.
 
-- chemistry was measured once per sample on the analytical portion, not separately in the two magnetic fractions;
-- magnetic screening is treated as a **triage tool**, not as a replacement for confirmatory geochemistry;
-- no causal source attribution, bioavailability claim, or external geographic/temporal validation is inferred from the archived campaign;
-- the numeric R/L suffix blocks are an analysis blocking convention, not independently verified physical co-location;
-- no monetary saving is claimed without an observed local cost ledger.
+## Run
 
-## Current scientific revision
-
-Current scientific revision: **V11 Environmental Advances final submission closure (2026-09-25)**.
-
-The central result is that measurement value depends on the declared endpoint. A configuration with the best predictive fit does not necessarily provide the best low-budget sample-recovery performance.
-
-V11 retains the V10 scientific analysis and closes pre-submission wording, declaration, line-numbering, and production items. In particular:
-
-- the Mn C-frequency-versus-two-fraction low-budget ordering remains explicitly definition-dependent rather than universal;
-- the Cu finding is stated as matching low-budget recovery count, not matching sample identity;
-- the external dual-frequency dataset remains a portability stress test, not external validation;
-- the sign convention for FC error gain is stated consistently with the defined equation;
-- public-facing declarations and submission files are separated from the controlled source archive.
-
-## Public-safe analysis code
-
-The repository contains a public-safe implementation of the central comparison in `code/analyse_public.py`.
-
-The code expects a local `data/analysis_input.csv` matching the schema documented in `data/README.md`. The controlled author/team source archive is **not included** in this public repository.
-
-To run after supplying an authorized local input file:
+Python 3.12 was used for release checks. Create and activate a virtual environment, then run from the repository root:
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-bash code/run_public.sh
+python -m pip install -r requirements-reproduction.txt
+python verification/verify_reproduction.py endpoint_extension --report reproduction_check.json
+python code/prepare_analysis_input.py
+python code/analyse_public.py
+python code/verify_public.py
+python code/verify_context_independently.py
 ```
 
-The runner writes aggregate analysis outputs only. It does not emit source-cell traces, row-level prediction files, or selected sample-ID lists.
+The first verifier executes the author code in a temporary directory and compares new CSVs with reference files. Running `endpoint_extension/run_all.py` directly replaces outputs beside its inputs; use a working copy if doing so. The central script writes aggregate outputs under `results/`. See [verification/README.md](verification/README.md) for the new workbook reconstruction utility. Its numerically matching output does not replace the hash-locked author master.
 
-## Publication-safe results
+## Interpretation and limits
 
-The `results/` directory contains aggregate outputs supporting the manuscript, including the primary blocked performance, resource frontier, low-budget triage, endpoint sensitivity, context safeguard, and the external frequency-only stress test.
+The release verifies the available workflows. The original generators for several older auxiliary analyses and plot/workbook presentation files are not included. New reconstruction and context checks are identified as such. See [RELEASE_SCOPE.md](docs/RELEASE_SCOPE.md) and [CONTEXT_REPRODUCTION.md](docs/CONTEXT_REPRODUCTION.md).
 
-These aggregate files are included for transparency and inspection; they are not a substitute for the controlled source archive.
+Chemistry was measured once per sample on the analytical portion, not separately in both magnetic fractions. The study concerns retrospective screening/triage within one campaign. Number blocks are a code-derived convention; the 45 outer batches overlap. Reproduction does not establish instrument accuracy, independent geographic validation, causal sources or prospective monetary savings.
 
-## Public-repository policy
+The campaign article and 2022 Yarmouk University master's thesis are ordinary scientific sources cited in the accompanying metadata. This data/software deposit does not represent journal publication or acceptance of the new manuscript.
 
-This repository is intentionally **public**. Original study-team spreadsheets, source documents, raw/source-level data, private transfer packages, and row-level source reconstructions are not uploaded unless the original team explicitly approves release.
+## Licenses and citation
 
-See `PUBLIC_RELEASE_POLICY.md`.
-
-## Reproducibility
-
-The controlled analysis pipeline passed its numerical/property and clean-replay checks. A separately written blocked-OLS implementation reproduced 54 matched primary model/metal metric combinations with maximum absolute difference (3.22\times10^{-15}) across R², block-MAE, and Spearman metrics.
-
-These checks establish computational reproducibility of the implemented analysis. They do **not** establish instrument accuracy, external validation, or geographic independence.
-
-## Repository status
-
-Public-safe code, documentation, and aggregate results are available. Original source-data release remains controlled by the original study team.
+Original software: MIT. Author-owned research data and documentation: CC BY 4.0. Licenses apply to separate components, not as alternatives for all files. Third-party rights remain unchanged. See [LICENSING.md](LICENSING.md) and [CITATION.cff](CITATION.cff).

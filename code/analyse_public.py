@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Public-safe implementation of the central V4 screening analysis.
 
-The controlled source workbook is not distributed in this repository. This script
-expects a publication-safe input CSV described in `data/README.md` and writes
+The original workbook and analysis inputs are released in endpoint_extension/.
+This historical central script uses data/analysis_input.csv and writes
 aggregate outputs only: no selected sample IDs, row-level predictions, or source
 trace tables are emitted.
 """
@@ -245,7 +245,7 @@ def resource_frontier(curves):
 
 def main():
     if not DATA.exists():
-        raise SystemExit("Missing data/analysis_input.csv. See data/README.md; source data are not public.")
+        raise SystemExit("Missing data/analysis_input.csv. Run python code/prepare_analysis_input.py; see data/README.md.")
     source = read_rows(DATA)
     paired = [r for r in source if r.get("Coarse_LF", "") not in ("", None)]
     exp = Experiment(paired)

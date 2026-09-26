@@ -1,8 +1,8 @@
 # ==========================================================
 # PUBLIC REPOSITORY SAFETY BOUNDARY
 # ==========================================================
-# Do not commit original author/team source files, spreadsheets,
-# correspondence, transfer packages, or controlled archives.
+# Unrelated private files and secrets remain excluded.
+# The explicitly released study inputs are allowlisted below.
 
 # Original / team spreadsheets and documents
 *.xlsx
@@ -58,3 +58,7 @@ Thumbs.db
 venv/
 .env
 .env.*
+
+# Authorized V11R3 research release
+!endpoint_extension/*.xlsx
+!data/analysis_input.csv

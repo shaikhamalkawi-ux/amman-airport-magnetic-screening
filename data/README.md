@@ -1,18 +1,7 @@
-# Analysis input (not included)
+# Central analysis input
 
-This public repository intentionally does **not** contain the original author/team spreadsheets or the controlled source workbook.
+`analysis_input.csv` is included. `python code/prepare_analysis_input.py` maps the hash-locked `endpoint_extension/Source_Reconstructed_Master_44.csv` into the earlier central script's schema without rounding or changing numerical values.
 
-The public analysis code expects a CSV named `data/analysis_input.csv` with one row per archived sample and these columns:
+`Block` copies `StationNumber`; `Distance_m` copies `Distance_numeric_m`; `Fine_LF` and `Coarse_LF` copy the reconstructed LF fields. Other selected columns keep their names. LF units are 10^-8 m^3 kg^-1, FD is percent, distance is metres, and chemistry is mg kg^-1. The master has 44 rows; the code uses the common 43-row paired cohort, excluding sample 24 with missing coarse readings.
 
-- `Sample` — stable sample identifier used only for deterministic tie breaking.
-- `Block` — the predeclared grouped-validation block identifier.
-- `SiteCode` — optional side/site code used for sensitivity checks.
-- `Side` — optional `L`/`R` field.
-- `Distance_m` — optional non-negative road-distance field.
-- `Fine_LF`, `Coarse_LF` — mass-specific low-frequency susceptibility for the fine and coarse fractions.
-- `Fine_FD_pct`, `Coarse_FD_pct` — frequency-dependence percentage for the fine and coarse fractions.
-- `Fe_mgkg`, `Zn_mgkg`, `Cu_mgkg`, `Cr_mgkg`, `Co_mgkg`, `Ni_mgkg`, `Mn_mgkg`, `Pb_mgkg`, `Cd_mgkg` — sample-level chemistry.
-
-Rows without a paired coarse measurement are excluded only from analyses that require the paired fine/coarse cohort.
-
-The repository intentionally provides the schema and analysis logic without redistributing the controlled source data.
+See [DATA_DICTIONARY.md](../docs/DATA_DICTIONARY.md) for source cells, all 31 master columns and mass rules. The adapter is new release code, not the historical master generator.

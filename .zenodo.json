@@ -1,0 +1,60 @@
+{
+  "title": "Reproducibility software and data for: When predictive fit and screening utility diverge: choosing frequency or particle size in roadside-soil magnetometry",
+  "upload_type": "software",
+  "version": "v11r3-reproducibility",
+  "description": "<p>Reproducibility software and research data accompanying the manuscript &#x27;When predictive fit and screening utility diverge: choosing frequency or particle size in roadside-soil magnetometry&#x27;. The study is a secondary analysis of an archived 44-sample roadside-soil campaign along the Amman-Airport Highway, Jordan, including 43 complete fine/coarse magnetic pairs and nine measured metal concentrations. The materials support examination of prediction error, held-out screening recovery, nested measurement selection, frequency-representation sensitivity, block-deletion sensitivity and conditional resource accounting. Included source data and executable workflows are intended for reproducing and checking the reported analyses. The execution report supplied with the release records the checks actually completed and their scope. The archive does not establish independent geographic validation. Original software is licensed under MIT; author-owned data and documentation are licensed under CC BY 4.0, as specified in LICENSING.md. Third-party materials retain their original terms.</p><p>The original campaign measured chemistry on one analytical portion per sample; the magnetic measurements cover fine and coarse fractions at two frequencies. The original workbook is provided unchanged as <code>04_M-Ghraam2026_ORIGINAL_UNCHANGED.xlsx</code> (SHA-256: <code>4ff48393b15d83306e9099efa30e12ee2d797cd57a0b75c44b8f99726380becb</code>). The supplied analysis table, source-cell verification and executable extension workflows accompany the workbook. The historical source-table generator is not claimed to have been recovered.</p><p>Campaign sources: Al-Momani, I. F., Lataifeh, M. S., and Al-Gharram, M. S. (2026), Measurement of Magnetic Susceptibility and Heavy Metals Concentration in Roadside Topsoil along Amman-Airport Highway, Jordan, <em>Jordan Journal of Physics</em>, 19(2), 213-222. <a href=\"https://jjp.yu.edu.jo/index.php/jjp/article/view/520\">Publisher record</a>. Al-Gharram, M. S. S. (2022), Measurement of Magnetic Susceptibility and Heavy Metals Concentration in Roadside Topsoil along Amman-Airport Highway, Jordan, Master's thesis, Yarmouk University.</p><p>File-specific licensing: the MIT license applies to original software only. Author-owned research data and documentation are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). See LICENSING.md for scope. These are separate licenses for different materials, not a choice of either license for all files. Third-party components and referenced publications retain their existing terms.</p>",
+  "creators": [
+    {
+      "name": "Al-Momani, Idrees F.",
+      "affiliation": "Department of Chemistry, Faculty of Science, Yarmouk University, Irbid 21163, Jordan"
+    },
+    {
+      "name": "Lataifeh, Mahdi S.",
+      "affiliation": "Department of Physics, Yarmouk University, Irbid 21163, Jordan"
+    },
+    {
+      "name": "Al-Gharram, Mohammad S.",
+      "affiliation": "Department of Earth and Environmental Sciences, Yarmouk University, Irbid 21163, Jordan"
+    },
+    {
+      "name": "Malkawi, Ghassan",
+      "affiliation": "Faculty of Computer Information Science, Higher Colleges of Technology, Al Ain, United Arab Emirates"
+    },
+    {
+      "name": "Elsayed, Ahmed",
+      "affiliation": "Department of Computer Engineering and Computational Sciences, Canadian University Dubai, Dubai, United Arab Emirates"
+    },
+    {
+      "name": "Al Barghouthy, Haroun Mohammad I.",
+      "affiliation": "Department of Mathematics and Natural Sciences, Faculty of Engineering Technology and Science, Higher Colleges of Technology, Al Ain, United Arab Emirates"
+    }
+  ],
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "keywords": [
+    "soil magnetometry",
+    "magnetic susceptibility",
+    "frequency dependence",
+    "particle size",
+    "heavy metals",
+    "sample prioritization",
+    "reproducibility",
+    "Amman-Airport Highway"
+  ],
+  "notes": "File-specific licensing: the MIT license applies to original software only. Author-owned research data and documentation are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). See LICENSING.md for scope. These are separate licenses for different materials, not a choice of either license for all files. Third-party components and referenced publications retain their existing terms.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/shaikhamalkawi-ux/amman-airport-magnetic-screening",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://jjp.yu.edu.jo/index.php/jjp/article/view/520",
+      "relation": "references",
+      "resource_type": "publication-article"
+    }
+  ],
+  "doi": "10.5281/zenodo.22973207",
+  "publication_date": "2026-09-26"
+}

@@ -1,3 +1,5 @@
+> Historical revision note. Data-release statements below describe that revision; the V11R3 public release status is in the root README.
+
 # V7 submission-clean closure
 
 V7 is an editorial, notation, and production-clean revision of the strengthened V6 analysis.

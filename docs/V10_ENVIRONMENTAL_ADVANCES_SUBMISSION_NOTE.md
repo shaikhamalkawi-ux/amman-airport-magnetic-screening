@@ -1,3 +1,5 @@
+> Historical revision note. Data-release statements below describe that revision; the V11R3 public release status is in the root README.
+
 # V10 Environmental Advances submission preparation
 
 V10 is a target-journal preparation revision only.

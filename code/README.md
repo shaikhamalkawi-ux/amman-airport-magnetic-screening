@@ -1,13 +1,7 @@
-# Analysis code
+# Central analysis code
 
-This directory contains the **public-safe** implementation of the central V4 screening comparison.
+`analyse_public.py` and `verify_public.py` retain the earlier central model comparison, grouped prediction, triage curves, batch summaries and conditional resource frontier. Their executable scientific logic is unchanged.
 
-## Files
+`prepare_analysis_input.py` is a new schema adapter for the released hash-locked master. `verify_context_independently.py` independently reconstructs the documented context models. Original endpoint-directed extension code is supplied separately in `endpoint_extension/`.
 
-- `analyse_public.py` — grouped prediction, selected-single benchmark, frequency-versus-fraction comparison, triage curves, held-out pair-batch audit, and conditional resource frontier.
-- `verify_public.py` — aggregate structural and arithmetic checks.
-- `run_public.sh` — sequential runner.
-
-The scripts do not contain the controlled source workbook or source values. They require an authorized local `data/analysis_input.csv` described in `data/README.md`.
-
-The public implementation deliberately emits aggregate outputs only. Source-cell traces, row-level prediction files, selected sample-ID lists, and private provenance records remain outside this repository.
+Run commands appear in the root README. Central outputs are written under `results/`.

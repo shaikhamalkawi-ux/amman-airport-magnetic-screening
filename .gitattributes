@@ -1,0 +1,14 @@
+# Scientific inputs and archived author files retain their exact byte identity.
+/endpoint_extension/** -text
+*.csv -text
+*.xlsx -text
+*.pdf -text
+*.png -text
+
+# Portable executable and documentation line endings.
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.cff text eol=lf
+*.txt text eol=lf
+/endpoint_extension/** -text

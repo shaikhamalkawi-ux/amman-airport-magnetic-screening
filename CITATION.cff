@@ -1,0 +1,69 @@
+# The license field describes original software. Data/documentation: CC-BY-4.0.
+# These are file-specific terms; see LICENSING.md, not alternative licenses for every file.
+cff-version: 1.2.0
+message: If you use these reproducibility materials, cite this release using the metadata below.
+type: software
+title: 'Reproducibility software and data for: When predictive fit and screening utility diverge: choosing frequency or particle size in roadside-soil magnetometry'
+version: v11r3-reproducibility
+authors:
+- given-names: Idrees F.
+  family-names: Al-Momani
+  affiliation: Department of Chemistry, Faculty of Science, Yarmouk University, Irbid 21163, Jordan
+- given-names: Mahdi S.
+  family-names: Lataifeh
+  affiliation: Department of Physics, Yarmouk University, Irbid 21163, Jordan
+- given-names: Mohammad S.
+  family-names: Al-Gharram
+  affiliation: Department of Earth and Environmental Sciences, Yarmouk University, Irbid 21163, Jordan
+- given-names: Ghassan
+  family-names: Malkawi
+  affiliation: Faculty of Computer Information Science, Higher Colleges of Technology, Al Ain, United Arab Emirates
+- given-names: Ahmed
+  family-names: Elsayed
+  affiliation: Department of Computer Engineering and Computational Sciences, Canadian University Dubai, Dubai, United Arab Emirates
+- given-names: Haroun Mohammad I.
+  family-names: Al Barghouthy
+  affiliation: Department of Mathematics and Natural Sciences, Faculty of Engineering Technology and Science, Higher Colleges of Technology, Al Ain, United Arab Emirates
+repository-code: https://github.com/shaikhamalkawi-ux/amman-airport-magnetic-screening
+url: https://github.com/shaikhamalkawi-ux/amman-airport-magnetic-screening
+abstract: 'Reproducibility software and research data accompanying the manuscript ''When predictive fit and screening utility diverge: choosing frequency or particle size in roadside-soil magnetometry''. The study is a secondary analysis of an archived 44-sample roadside-soil campaign along the Amman-Airport Highway, Jordan, including 43 complete fine/coarse magnetic pairs and nine measured metal concentrations. The materials support examination of prediction error, held-out screening recovery, nested measurement selection, frequency-representation sensitivity, block-deletion sensitivity and conditional resource accounting. Included source data and executable workflows are intended for reproducing and checking the reported analyses. The execution report supplied with the release records the checks actually completed and their scope. The archive does not establish independent geographic validation. Original software is licensed under MIT; author-owned data and documentation are licensed under
+  CC BY 4.0, as specified in LICENSING.md. Third-party materials retain their original terms.'
+keywords:
+- soil magnetometry
+- magnetic susceptibility
+- frequency dependence
+- particle size
+- heavy metals
+- sample prioritization
+- reproducibility
+- Amman-Airport Highway
+license: MIT
+references:
+- type: article
+  title: Measurement of Magnetic Susceptibility and Heavy Metals Concentration in Roadside Topsoil along Amman-Airport Highway, Jordan
+  authors:
+  - given-names: Idrees F.
+    family-names: Al-Momani
+  - given-names: Mahdi S.
+    family-names: Lataifeh
+  - given-names: Mohammad S.
+    family-names: Al-Gharram
+  journal: Jordan Journal of Physics
+  year: 2026
+  volume: 19
+  issue: 2
+  start: 213
+  end: 222
+  url: https://jjp.yu.edu.jo/index.php/jjp/article/view/520
+- type: thesis
+  title: Measurement of Magnetic Susceptibility and Heavy Metals Concentration in Roadside Topsoil along Amman-Airport Highway, Jordan
+  authors:
+  - given-names: Mohammad Suhail Saleh
+    family-names: Al-Gharram
+  institution:
+    name: Yarmouk University
+  thesis-type: Master's thesis
+  year: 2022
+
+doi: "10.5281/zenodo.22973207"
+date-released: "2026-09-26"

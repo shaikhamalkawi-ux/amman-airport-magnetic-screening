@@ -1,0 +1,19 @@
+{
+  "utility_provenance": "New independent release utility; not historical SourceLock V3 code",
+  "workbook_sha256": "4ff48393b15d83306e9099efa30e12ee2d797cd57a0b75c44b8f99726380becb",
+  "generated_csv_sha256": "89c65eedee10fed729f7ac38257f3d179013b44cc4f22e0cc5968d46b5619eac",
+  "rows": 44,
+  "columns": 31,
+  "workbook_unchanged": true,
+  "reference_used_to_construct_values": false,
+  "reference_sha256": "e1804049d7e2819e8b1228eb55db81524caaa18cb6d4745000c20d3ce609d105",
+  "same_structure": true,
+  "byte_identical_to_reference": false,
+  "numeric_cells_compared": 1094,
+  "categorical_cells_compared": 270,
+  "maximum_absolute_numeric_difference": 3.907985046680551e-14,
+  "numeric_absolute_tolerance": 1e-12,
+  "numeric_relative_tolerance": 1e-12,
+  "mismatches": [],
+  "status": "PASS"
+}

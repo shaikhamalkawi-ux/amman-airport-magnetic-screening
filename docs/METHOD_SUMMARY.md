@@ -1,6 +1,6 @@
 # Method summary
 
-The public code implements the central comparison reported in the V4 study without redistributing the controlled source workbook.
+The earlier central public code implements the comparison developed in V4. The V11R3 release now provides its analysis input and the original workbook, together with the later endpoint-directed extension and independent verification utilities. The current coverage is described in RELEASE_SCOPE.md.
 
 ## Measurement alternatives
 

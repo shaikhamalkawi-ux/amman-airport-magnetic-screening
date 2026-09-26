@@ -1,3 +1,5 @@
+> Historical revision note. Data-release statements below describe that revision; the V11R3 public release status is in the root README.
+
 # V6 strengthening note
 
 V6 preserves the underlying Jordan measurements and fixed-model pipeline while strengthening how the decision claim is tested.

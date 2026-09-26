@@ -1,5 +1,5 @@
 # Aggregate results
 
-This directory contains only publication-safe aggregate outputs. No original Excel workbook, row-level source reconstruction, selected sample-ID list, or controlled author file is stored here.
+This directory contains the historical aggregate reference outputs, outputs from the central public script, and independently reconstructed context metrics and predictions under `context_reproduction/`. Original inputs and endpoint-extension reference results are in `../endpoint_extension/`.
 
-The committed aggregate tables are copies of V4 outputs used to support the manuscript. They are intended for inspection, not as a substitute for the controlled source archive.
+The lowercase historical CSV files are retained reference tables. Capitalized central-script CSV files and the context directory can be regenerated with the commands in the root README. The current scope and reconciliation evidence are in `../docs/RELEASE_SCOPE.md`.
